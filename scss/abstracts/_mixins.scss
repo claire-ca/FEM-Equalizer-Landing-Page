@@ -1,0 +1,21 @@
+// Tablet size: 768px/48em
+// Desktop size: 1200px/75em
+// XL-Desktop size: 1600px/100em
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == tablet {
+    @media (min-width: 48em) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop {
+    @media (min-width: 75em) {
+      @content;
+    }
+  }
+  @if $breakpoint == xl-desktop {
+    @media (min-width: 100em) {
+      @content;
+    }
+  }
+}

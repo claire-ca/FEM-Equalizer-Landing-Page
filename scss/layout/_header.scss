@@ -1,0 +1,17 @@
+.header {
+  margin-top: 2.5em; //40px
+  margin-bottom: 4em; //64px
+  & .logo {
+    display: block;
+    height: 32px;
+    width: 146px;
+  }
+  @include respond(tablet) {
+    margin-top: 3.88em; //62px
+    margin-bottom: 5.94em; //95px
+  }
+  @include respond(desktop) {
+    margin-bottom: 7.94em; //127px
+    margin-top: 2.7em; //43px
+  }
+}

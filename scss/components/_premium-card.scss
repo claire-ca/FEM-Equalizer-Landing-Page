@@ -1,0 +1,167 @@
+.premium {
+  max-width: 1110px;
+
+  @include respond(tablet) {
+    width: 90%;
+    margin: 0 auto;
+  }
+  @include respond(desktop) {
+    width: 77%;
+  }
+  &__content {
+    background-color: $color-black;
+    background-image: url(../assets/bg-pattern-2.svg);
+    background-repeat: no-repeat;
+    background-position: top 0 left 50%;
+    background-size: 280px 420px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    max-width: 1110px;
+    margin: 0 auto;
+    @include respond(tablet) {
+      background-position: top -30px left 50%;
+      height: 600px;
+    }
+    @include respond(desktop) {
+      background-position: top -40px left 43%;
+      background-size: 312px 468px;
+    }
+  }
+  & .app-img {
+    width: clamp(209px, 40%, 312px);
+    // width: 209px;
+    position: relative;
+    top: -98px;
+    @include respond(tablet) {
+      // width: 270px;
+      position: absolute;
+      top: -138px;
+      left: 50px;
+    }
+    @include respond(desktop) {
+      // width: 312px;
+      top: -214px;
+      left: 100px;
+    }
+  }
+  & .card {
+    margin-top: -3.125em; //-50px
+    color: $color-white;
+    background-color: $color-primary;
+    border-radius: inherit;
+    padding: 3em 2.25em; // 48px 36px
+    @include respond(tablet) {
+      padding: 3em 3em 3em 2.5em; // 48px 48px 48px 40px
+      position: absolute;
+      top: 150px;
+      right: 50px;
+      width: clamp(399px, 50%, 40%);
+      // min-width: 399px;
+      // max-width: 50%;
+      margin-top: 0;
+    }
+    @include respond(desktop) {
+      padding: 3.63em 3.5em 3em 3.38em; // 58px 56px 48px 54px
+      // max-width: 40%;
+      top: 90px;
+      right: 96px;
+    }
+    &__title {
+      font-weight: bold;
+      font-size: 2rem; // 32px
+      margin-bottom: 0.4em; // 12px
+      @include respond(tablet) {
+        margin-bottom: 0.35em; // 11px
+      }
+      @include respond(desktop) {
+        font-size: 2.5rem; // 40px
+        margin-bottom: 0.55em; // 22px
+      }
+    }
+    &__description {
+      font-size: 1.125rem; // 18px
+      line-height: 1.56em; // 28px
+      margin-bottom: 1em; // 18px
+      @include respond(desktop) {
+        font-size: 1.25rem; // 20px
+        line-height: 1.7em; // 34px
+        margin-bottom: 1.1em; // 22px
+      }
+    }
+    &__pricing {
+      font-size: 1.25rem; // 20px
+      margin-bottom: 0.7em; // 14px
+      padding-left: 5px;
+      display: flex;
+      align-items: center;
+      @include respond(desktop) {
+        margin-bottom: 1.5em; // 30px
+        padding-left: 0;
+      }
+      & > span {
+        font-size: 4.06rem; // 65px
+        font-weight: bold;
+        margin-right: 1rem; // 16px
+      }
+    }
+    .btn-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.9em;
+      .btn {
+        border-radius: 12px;
+        font-weight: bold;
+        font-size: 1.125rem; // 18px
+        padding: 1.11em 0; // 20px 0
+        display: flex;
+        justify-content: center;
+        gap: 3px;
+        &__download--ios,
+        &__download--android {
+          &::before {
+            content: " ";
+            display: block;
+            width: 17px;
+            height: 20px;
+            background-repeat: no-repeat;
+          }
+          &:hover,
+          &:focus {
+            transform: scale(1.01);
+            box-shadow: 0 3px 6px rgba($color-black, 0.3);
+          }
+          &:active {
+            animation: btnPress 0.4s ease;
+          }
+        }
+        &__download--ios {
+          background-color: $color-black;
+          color: $color-white;
+          transition: 0.2s ease-in;
+          &::before {
+            background-image: url(../assets/icon-apple.svg);
+          }
+          &:hover,
+          &:focus {
+            background-color: $color-secondary;
+          }
+        }
+        &__download--android {
+          background-color: $color-white;
+          color: $color-black;
+          transition: 0.2s ease-in;
+          &::before {
+            background-image: url(../assets/icon-android.svg);
+          }
+          &:hover,
+          &:focus {
+            background-color: $color-tertiary;
+          }
+        }
+      }
+    }
+  }
+}

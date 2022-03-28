@@ -1,0 +1,22 @@
+body {
+  font-family: $font-primary;
+  background-color: $color-white;
+  background-image: url(../assets/bg-main-mobile.png);
+  background-repeat: no-repeat;
+  background-position: top -200px right -180px;
+  max-width: 2000px;
+  margin: 0 auto;
+
+  @include respond(tablet) {
+    background-image: url(../assets/bg-pattern-1.svg),
+      url(../assets/bg-main-tablet.png);
+    background-position: top -30px right -30px, top -220px right -100px;
+    background-size: 266px 400px, auto;
+  }
+  @include respond(desktop) {
+    background-image: url(../assets/bg-pattern-1.svg),
+      url(../assets/bg-main-desktop.png);
+    background-position: top -60px right 0, top -220px right -220px;
+    background-size: auto, auto;
+  }
+}

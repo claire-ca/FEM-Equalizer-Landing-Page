@@ -10,7 +10,7 @@
   }
 }
 
-/* line 51, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+/* line 1, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/base/_base.scss */
 *,
 *::before,
 *::after {
@@ -19,43 +19,43 @@
   box-sizing: border-box;
 }
 
-/* line 59, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+/* line 9, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/base/_base.scss */
 html {
   font-size: 100%;
 }
 
-/* line 63, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+/* line 13, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/base/_base.scss */
 img {
   max-width: 100%;
 }
 
-/* line 67, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+/* line 17, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/base/_base.scss */
 a {
   text-decoration: none;
 }
 
-/* line 72, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+/* line 2, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/base/_utilities.scss */
 .container {
   width: 88%;
   margin: 0 auto;
 }
 
 @media (min-width: 48em) {
-  /* line 72, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+  /* line 2, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/base/_utilities.scss */
   .container {
     width: 90%;
   }
 }
 
 @media (min-width: 75em) {
-  /* line 72, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+  /* line 2, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/base/_utilities.scss */
   .container {
     width: 77%;
   }
 }
 
 @media (min-width: 100em) {
-  /* line 72, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+  /* line 2, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/base/_utilities.scss */
   .container {
     width: 65%;
     max-width: 1110px;
@@ -69,7 +69,7 @@ Hides icon text, but still can be read by screen readers.
 Code snippet taken from: https://a11y-101.com/development/skip-link
 
 */
-/* line 94, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+/* line 24, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/base/_utilities.scss */
 .visually-hidden {
   clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
@@ -79,142 +79,13 @@ Code snippet taken from: https://a11y-101.com/development/skip-link
   width: 1px;
 }
 
-/* line 103, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
-body {
-  font-family: "IBM Plex Sans", sans-serif;
-  background-color: #fcfaf9;
-  background-image: url(../assets/bg-main-mobile.png);
-  background-repeat: no-repeat;
-  background-position: top -200px right -180px;
-  max-width: 2000px;
-  margin: 0 auto;
-}
-
-@media (min-width: 48em) {
-  /* line 103, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
-  body {
-    background-image: url(../assets/bg-pattern-1.svg), url(../assets/bg-main-tablet.png);
-    background-position: top -30px right -30px, top -220px right -100px;
-    background-size: 266px 400px, auto;
-  }
-}
-
-@media (min-width: 75em) {
-  /* line 103, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
-  body {
-    background-image: url(../assets/bg-pattern-1.svg), url(../assets/bg-main-desktop.png);
-    background-position: top -60px right 0, top -220px right -220px;
-    background-size: auto, auto;
-  }
-}
-
-/* line 126, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
-.header {
-  margin-top: 2.5em;
-  margin-bottom: 4em;
-}
-
-/* line 129, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
-.header .logo {
-  display: block;
-  height: 32px;
-  width: 146px;
-}
-
-@media (min-width: 48em) {
-  /* line 126, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
-  .header {
-    margin-top: 3.88em;
-    margin-bottom: 5.94em;
-  }
-}
-
-@media (min-width: 75em) {
-  /* line 126, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
-  .header {
-    margin-bottom: 7.94em;
-    margin-top: 2.7em;
-  }
-}
-
-/* line 143, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
-.hero {
-  color: #191826;
-  margin-bottom: 10.25em;
-}
-
-@media (min-width: 48em) {
-  /* line 143, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
-  .hero {
-    margin-bottom: 15.38em;
-  }
-}
-
-@media (min-width: 75em) {
-  /* line 143, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
-  .hero {
-    margin-bottom: 20.13em;
-  }
-}
-
-/* line 152, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
-.hero__title {
-  font-size: 2.5rem;
-  line-height: 1.2em;
-  letter-spacing: -0.45px;
-  width: 80%;
-  margin-bottom: 0.5em;
-}
-
-@media (min-width: 48em) {
-  /* line 152, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
-  .hero__title {
-    font-size: 4rem;
-    line-height: 1em;
-    letter-spacing: -0.73px;
-    margin-bottom: 0.45em;
-  }
-}
-
-@media (min-width: 75em) {
-  /* line 152, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
-  .hero__title {
-    font-size: 5.5rem;
-    letter-spacing: -1px;
-    width: 85%;
-  }
-}
-
-/* line 170, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
-.hero__description {
-  line-height: 1.63em;
-}
-
-@media (min-width: 48em) {
-  /* line 170, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
-  .hero__description {
-    font-size: 1.125rem;
-    line-height: 1.56em;
-    width: 74%;
-  }
-}
-
-@media (min-width: 75em) {
-  /* line 170, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
-  .hero__description {
-    font-size: 1.25rem;
-    line-height: 1.7em;
-    width: 78%;
-  }
-}
-
-/* line 184, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+/* line 1, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/components/_premium-card.scss */
 .premium {
   max-width: 1110px;
 }
 
 @media (min-width: 48em) {
-  /* line 184, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+  /* line 1, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/components/_premium-card.scss */
   .premium {
     width: 90%;
     margin: 0 auto;
@@ -222,13 +93,13 @@ body {
 }
 
 @media (min-width: 75em) {
-  /* line 184, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+  /* line 1, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/components/_premium-card.scss */
   .premium {
     width: 77%;
   }
 }
 
-/* line 194, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+/* line 11, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/components/_premium-card.scss */
 .premium__content {
   background-color: #191826;
   background-image: url(../assets/bg-pattern-2.svg);
@@ -245,7 +116,7 @@ body {
 }
 
 @media (min-width: 48em) {
-  /* line 194, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+  /* line 11, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/components/_premium-card.scss */
   .premium__content {
     background-position: top -30px left 50%;
     height: 600px;
@@ -253,14 +124,14 @@ body {
 }
 
 @media (min-width: 75em) {
-  /* line 194, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+  /* line 11, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/components/_premium-card.scss */
   .premium__content {
     background-position: top -40px left 43%;
     background-size: 312px 468px;
   }
 }
 
-/* line 216, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+/* line 33, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/components/_premium-card.scss */
 .premium .app-img {
   width: clamp(209px, 40%, 312px);
   position: relative;
@@ -268,7 +139,7 @@ body {
 }
 
 @media (min-width: 48em) {
-  /* line 216, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+  /* line 33, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/components/_premium-card.scss */
   .premium .app-img {
     position: absolute;
     top: -138px;
@@ -277,14 +148,14 @@ body {
 }
 
 @media (min-width: 75em) {
-  /* line 216, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+  /* line 33, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/components/_premium-card.scss */
   .premium .app-img {
     top: -214px;
     left: 100px;
   }
 }
 
-/* line 233, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+/* line 50, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/components/_premium-card.scss */
 .premium .card {
   margin-top: -3.125em;
   color: #fcfaf9;
@@ -294,7 +165,7 @@ body {
 }
 
 @media (min-width: 48em) {
-  /* line 233, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+  /* line 50, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/components/_premium-card.scss */
   .premium .card {
     padding: 3em 3em 3em 2.5em;
     position: absolute;
@@ -306,7 +177,7 @@ body {
 }
 
 @media (min-width: 75em) {
-  /* line 233, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+  /* line 50, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/components/_premium-card.scss */
   .premium .card {
     padding: 3.63em 3.5em 3em 3.38em;
     top: 90px;
@@ -314,7 +185,7 @@ body {
   }
 }
 
-/* line 255, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+/* line 72, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/components/_premium-card.scss */
 .premium .card__title {
   font-weight: bold;
   font-size: 2rem;
@@ -322,21 +193,21 @@ body {
 }
 
 @media (min-width: 48em) {
-  /* line 255, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+  /* line 72, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/components/_premium-card.scss */
   .premium .card__title {
     margin-bottom: 0.35em;
   }
 }
 
 @media (min-width: 75em) {
-  /* line 255, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+  /* line 72, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/components/_premium-card.scss */
   .premium .card__title {
     font-size: 2.5rem;
     margin-bottom: 0.55em;
   }
 }
 
-/* line 267, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+/* line 84, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/components/_premium-card.scss */
 .premium .card__description {
   font-size: 1.125rem;
   line-height: 1.56em;
@@ -344,7 +215,7 @@ body {
 }
 
 @media (min-width: 75em) {
-  /* line 267, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+  /* line 84, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/components/_premium-card.scss */
   .premium .card__description {
     font-size: 1.25rem;
     line-height: 1.7em;
@@ -352,7 +223,7 @@ body {
   }
 }
 
-/* line 277, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+/* line 94, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/components/_premium-card.scss */
 .premium .card__pricing {
   font-size: 1.25rem;
   margin-bottom: 0.7em;
@@ -362,28 +233,28 @@ body {
 }
 
 @media (min-width: 75em) {
-  /* line 277, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+  /* line 94, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/components/_premium-card.scss */
   .premium .card__pricing {
     margin-bottom: 1.5em;
     padding-left: 0;
   }
 }
 
-/* line 287, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+/* line 104, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/components/_premium-card.scss */
 .premium .card__pricing > span {
   font-size: 4.06rem;
   font-weight: bold;
   margin-right: 1rem;
 }
 
-/* line 293, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+/* line 110, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/components/_premium-card.scss */
 .premium .card .btn-container {
   display: flex;
   flex-direction: column;
   gap: 0.9em;
 }
 
-/* line 297, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+/* line 114, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/components/_premium-card.scss */
 .premium .card .btn-container .btn {
   border-radius: 12px;
   font-weight: bold;
@@ -394,7 +265,7 @@ body {
   gap: 3px;
 }
 
-/* line 307, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+/* line 124, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/components/_premium-card.scss */
 .premium .card .btn-container .btn__download--ios::before, .premium .card .btn-container .btn__download--android::before {
   content: " ";
   display: block;
@@ -403,59 +274,88 @@ body {
   background-repeat: no-repeat;
 }
 
-/* line 314, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+/* line 131, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/components/_premium-card.scss */
 .premium .card .btn-container .btn__download--ios:hover, .premium .card .btn-container .btn__download--ios:focus, .premium .card .btn-container .btn__download--android:hover, .premium .card .btn-container .btn__download--android:focus {
   transform: scale(1.01);
   box-shadow: 0 3px 6px rgba(25, 24, 38, 0.3);
 }
 
-/* line 319, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+/* line 136, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/components/_premium-card.scss */
 .premium .card .btn-container .btn__download--ios:active, .premium .card .btn-container .btn__download--android:active {
   animation: btnPress 0.4s ease;
 }
 
-/* line 323, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+/* line 140, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/components/_premium-card.scss */
 .premium .card .btn-container .btn__download--ios {
   background-color: #191826;
   color: #fcfaf9;
   transition: 0.2s ease-in;
 }
 
-/* line 327, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+/* line 144, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/components/_premium-card.scss */
 .premium .card .btn-container .btn__download--ios::before {
   background-image: url(../assets/icon-apple.svg);
 }
 
-/* line 330, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+/* line 147, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/components/_premium-card.scss */
 .premium .card .btn-container .btn__download--ios:hover, .premium .card .btn-container .btn__download--ios:focus {
   background-color: #66e2dc;
 }
 
-/* line 335, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+/* line 152, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/components/_premium-card.scss */
 .premium .card .btn-container .btn__download--android {
   background-color: #fcfaf9;
   color: #191826;
   transition: 0.2s ease-in;
 }
 
-/* line 339, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+/* line 156, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/components/_premium-card.scss */
 .premium .card .btn-container .btn__download--android::before {
   background-image: url(../assets/icon-android.svg);
 }
 
-/* line 342, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+/* line 159, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/components/_premium-card.scss */
 .premium .card .btn-container .btn__download--android:hover, .premium .card .btn-container .btn__download--android:focus {
   background-color: #ffb964;
 }
 
-/* line 351, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+/* line 1, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/layout/_body.scss */
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  background-color: #fcfaf9;
+  background-image: url(../assets/bg-main-mobile.png);
+  background-repeat: no-repeat;
+  background-position: top -200px right -180px;
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+@media (min-width: 48em) {
+  /* line 1, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/layout/_body.scss */
+  body {
+    background-image: url(../assets/bg-pattern-1.svg), url(../assets/bg-main-tablet.png);
+    background-position: top -30px right -30px, top -220px right -100px;
+    background-size: 266px 400px, auto;
+  }
+}
+
+@media (min-width: 75em) {
+  /* line 1, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/layout/_body.scss */
+  body {
+    background-image: url(../assets/bg-pattern-1.svg), url(../assets/bg-main-desktop.png);
+    background-position: top -60px right 0, top -220px right -220px;
+    background-size: auto, auto;
+  }
+}
+
+/* line 1, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/layout/_footer.scss */
 .footer {
   margin-top: 3.81em;
   margin-bottom: 5em;
 }
 
 @media (min-width: 48em) {
-  /* line 351, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+  /* line 1, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/layout/_footer.scss */
   .footer {
     display: grid;
     grid-template-columns: 1.3fr 1fr;
@@ -466,7 +366,7 @@ body {
 }
 
 @media (min-width: 75em) {
-  /* line 351, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+  /* line 1, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/layout/_footer.scss */
   .footer {
     grid-template-columns: 1fr 1.4fr 1.5fr;
     grid-template-rows: 1fr;
@@ -475,7 +375,7 @@ body {
   }
 }
 
-/* line 367, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+/* line 17, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/layout/_footer.scss */
 .footer__logo {
   display: block;
   margin-bottom: 2.1em;
@@ -483,7 +383,7 @@ body {
   grid-row: 1;
 }
 
-/* line 373, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+/* line 23, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/layout/_footer.scss */
 .footer__text {
   line-height: 1.63em;
   grid-column: 1;
@@ -491,37 +391,37 @@ body {
 }
 
 @media (min-width: 75em) {
-  /* line 373, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+  /* line 23, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/layout/_footer.scss */
   .footer__text {
     grid-column: 2;
     grid-row: 1;
   }
 }
 
-/* line 382, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+/* line 32, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/layout/_footer.scss */
 .footer .copyright, .footer__email-info {
   display: block;
 }
 
-/* line 386, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+/* line 36, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/layout/_footer.scss */
 .footer__email-info {
   color: inherit;
   font-weight: bold;
 }
 
-/* line 389, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+/* line 39, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/layout/_footer.scss */
 .footer__email-info:hover, .footer__email-info:focus {
   text-decoration: underline;
 }
 
 @media (min-width: 48em) {
-  /* line 386, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+  /* line 36, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/layout/_footer.scss */
   .footer__email-info {
     display: inline-block;
   }
 }
 
-/* line 397, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+/* line 47, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/layout/_footer.scss */
 .footer .socials__container {
   grid-column: 2;
   grid-row: 2;
@@ -533,7 +433,7 @@ body {
 }
 
 @media (min-width: 48em) {
-  /* line 397, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+  /* line 47, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/layout/_footer.scss */
   .footer .socials__container {
     margin-top: 0;
     align-items: center;
@@ -541,27 +441,27 @@ body {
 }
 
 @media (min-width: 75em) {
-  /* line 397, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+  /* line 47, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/layout/_footer.scss */
   .footer .socials__container {
     grid-column: 3;
     grid-row: 1;
   }
 }
 
-/* line 413, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+/* line 63, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/layout/_footer.scss */
 .footer .socials__container .socials__links .link__svg {
   color: #191826;
   transition: 0.2s ease-in;
   display: block;
 }
 
-/* line 417, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+/* line 67, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/layout/_footer.scss */
 .footer .socials__container .socials__links .link__svg:hover, .footer .socials__container .socials__links .link__svg:focus {
   color: #fa7453;
   transform: scale(1.2);
 }
 
-/* line 425, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+/* line 75, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/layout/_footer.scss */
 .attribution {
   display: flex;
   justify-content: center;
@@ -570,26 +470,126 @@ body {
   text-align: center;
 }
 
-/* line 431, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+/* line 81, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/layout/_footer.scss */
 .attribution a {
   font-weight: bold;
   color: inherit;
 }
 
-/* line 434, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+/* line 84, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/layout/_footer.scss */
 .attribution a:hover, .attribution a:focus {
   text-decoration: underline;
 }
 
-/* line 439, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+/* line 89, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/layout/_footer.scss */
 .attribution .attribution__author {
   display: block;
 }
 
 @media (min-width: 48em) {
-  /* line 439, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/style.scss */
+  /* line 89, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/layout/_footer.scss */
   .attribution .attribution__author {
     display: initial;
+  }
+}
+
+/* line 1, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/layout/_header.scss */
+.header {
+  margin-top: 2.5em;
+  margin-bottom: 4em;
+}
+
+/* line 4, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/layout/_header.scss */
+.header .logo {
+  display: block;
+  height: 32px;
+  width: 146px;
+}
+
+@media (min-width: 48em) {
+  /* line 1, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/layout/_header.scss */
+  .header {
+    margin-top: 3.88em;
+    margin-bottom: 5.94em;
+  }
+}
+
+@media (min-width: 75em) {
+  /* line 1, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/layout/_header.scss */
+  .header {
+    margin-bottom: 7.94em;
+    margin-top: 2.7em;
+  }
+}
+
+/* line 1, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/layout/_hero.scss */
+.hero {
+  color: #191826;
+  margin-bottom: 10.25em;
+}
+
+@media (min-width: 48em) {
+  /* line 1, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/layout/_hero.scss */
+  .hero {
+    margin-bottom: 15.38em;
+  }
+}
+
+@media (min-width: 75em) {
+  /* line 1, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/layout/_hero.scss */
+  .hero {
+    margin-bottom: 20.13em;
+  }
+}
+
+/* line 10, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/layout/_hero.scss */
+.hero__title {
+  font-size: 2.5rem;
+  line-height: 1.2em;
+  letter-spacing: -0.45px;
+  width: 80%;
+  margin-bottom: 0.5em;
+}
+
+@media (min-width: 48em) {
+  /* line 10, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/layout/_hero.scss */
+  .hero__title {
+    font-size: 4rem;
+    line-height: 1em;
+    letter-spacing: -0.73px;
+    margin-bottom: 0.45em;
+  }
+}
+
+@media (min-width: 75em) {
+  /* line 10, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/layout/_hero.scss */
+  .hero__title {
+    font-size: 5.5rem;
+    letter-spacing: -1px;
+    width: 85%;
+  }
+}
+
+/* line 28, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/layout/_hero.scss */
+.hero__description {
+  line-height: 1.63em;
+}
+
+@media (min-width: 48em) {
+  /* line 28, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/layout/_hero.scss */
+  .hero__description {
+    font-size: 1.125rem;
+    line-height: 1.56em;
+    width: 74%;
+  }
+}
+
+@media (min-width: 75em) {
+  /* line 28, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/layout/_hero.scss */
+  .hero__description {
+    font-size: 1.25rem;
+    line-height: 1.7em;
+    width: 78%;
   }
 }
 

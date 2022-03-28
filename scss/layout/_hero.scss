@@ -1,0 +1,41 @@
+.hero {
+  color: $color-black;
+  margin-bottom: 10.25em; // 164px
+  @include respond(tablet) {
+    margin-bottom: 15.38em; // calc(164px + 82px);
+  }
+  @include respond(desktop) {
+    margin-bottom: 20.13em; // calc(164px + 158px);
+  }
+  &__title {
+    font-size: 2.5rem; // 40px
+    line-height: 1.2em; // 48px
+    letter-spacing: -0.45px;
+    width: 80%;
+    margin-bottom: 0.5em; // 20px
+    @include respond(tablet) {
+      font-size: 4rem; // 64px
+      line-height: 1em; // 64px
+      letter-spacing: -0.73px;
+      margin-bottom: 0.45em; // 20px
+    }
+    @include respond(desktop) {
+      font-size: 5.5rem; // 88px
+      letter-spacing: -1px;
+      width: 85%;
+    }
+  }
+  &__description {
+    line-height: 1.63em; // 26px
+    @include respond(tablet) {
+      font-size: 1.125rem; // 18px
+      line-height: 1.56em; // 28px
+      width: 74%;
+    }
+    @include respond(desktop) {
+      font-size: 1.25rem; // 20px
+      line-height: 1.7em; // 34px
+      width: 78%;
+    }
+  }
+}

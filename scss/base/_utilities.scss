@@ -1,0 +1,31 @@
+// ULTILITIES
+.container {
+  width: 88%;
+  margin: 0 auto;
+  @include respond(tablet) {
+    width: 90%;
+  }
+  @include respond(desktop) {
+    width: 77%;
+  }
+  @include respond(xl-desktop) {
+    width: 65%;
+    max-width: 1110px;
+  }
+}
+
+/* 
+
+Below code for .visually-hidden:
+Hides icon text, but still can be read by screen readers.
+Code snippet taken from: https://a11y-101.com/development/skip-link
+
+*/
+.visually-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
