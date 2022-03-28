@@ -54,7 +54,6 @@ $font-primary: "IBM Plex Sans", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  // border: 1px solid red;
 }
 
 html {
@@ -69,6 +68,38 @@ a {
   text-decoration: none;
 }
 
+// ULTILITIES
+.container {
+  width: 88%;
+  margin: 0 auto;
+  @include respond(tablet) {
+    width: 90%;
+  }
+  @include respond(desktop) {
+    width: 77%;
+  }
+  @include respond(xl-desktop) {
+    width: 65%;
+    max-width: 1110px;
+  }
+}
+
+/* 
+
+Below code for .visually-hidden:
+Hides icon text, but still can be read by screen readers.
+Code snippet taken from: https://a11y-101.com/development/skip-link
+
+*/
+.visually-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 body {
   font-family: $font-primary;
   background-color: $color-white;
@@ -76,6 +107,7 @@ body {
   background-repeat: no-repeat;
   background-position: top -200px right -180px;
   max-width: 2000px;
+  margin: 0 auto;
 
   @include respond(tablet) {
     background-image: url(../assets/bg-pattern-1.svg),
@@ -86,85 +118,66 @@ body {
   @include respond(desktop) {
     background-image: url(../assets/bg-pattern-1.svg),
       url(../assets/bg-main-desktop.png);
-    background-position: top -30px right 0, top -220px right -220px;
+    background-position: top -60px right 0, top -220px right -220px;
     background-size: auto, auto;
   }
 }
 
-// ULTILITIES
-.container {
-  width: 90%;
-  margin: 0 auto;
-  @include respond(desktop) {
-    width: 77%;
-  }
-  @include respond(xl-desktop) {
-    width: 65%;
-    max-width: 1110px;
-  }
-}
-
 .header {
-  margin-top: 2.4em;
-  // margin-top: 2.5em; //40px;
-  margin-bottom: 4em;
-  // margin-bottom: 4.13em; //66px;
-  padding-left: 5px; // moves into place for PerfectPixel
+  margin-top: 2.5em; //40px
+  margin-bottom: 4em; //64px
   & .logo {
     display: block;
     height: 32px;
     width: 146px;
   }
   @include respond(tablet) {
-    margin-top: 3.88em; //62px;
-    margin-bottom: 5.94em; //95px;
+    margin-top: 3.88em; //62px
+    margin-bottom: 5.94em; //95px
   }
   @include respond(desktop) {
     margin-bottom: 7.94em; //127px
+    margin-top: 2.7em; //43px
   }
 }
 .hero {
   color: $color-black;
-  margin-bottom: 164px;
-  padding-left: 5px; // moves into place for PerfectPixel
+  margin-bottom: 10.25em; // 164px
   @include respond(tablet) {
-    margin-bottom: calc(164px + 82px);
+    margin-bottom: 15.38em; // calc(164px + 82px);
   }
   @include respond(desktop) {
-    margin-bottom: calc(164px + 158px);
+    margin-bottom: 20.13em; // calc(164px + 158px);
   }
   &__title {
-    // font-size: clamp(2.5rem, 1.8rem + 4.5vw, 5.5rem);
-    font-size: 2.5rem;
-    line-height: 1.2em;
+    font-size: 2.5rem; // 40px
+    line-height: 1.2em; // 48px
     letter-spacing: -0.45px;
     width: 80%;
-    margin-bottom: 0.5em; // 20px;
+    margin-bottom: 0.5em; // 20px
     @include respond(tablet) {
-      font-size: 4rem;
-      line-height: 1em;
+      font-size: 4rem; // 64px
+      line-height: 1em; // 64px
       letter-spacing: -0.73px;
+      margin-bottom: 0.45em; // 20px
     }
     @include respond(desktop) {
-      font-size: 5.5rem;
+      font-size: 5.5rem; // 88px
       letter-spacing: -1px;
-      // margin-bottom: 0.34em; // 30px;
-      margin-bottom: 40px;
       width: 85%;
     }
   }
   &__description {
     line-height: 1.63em; // 26px
-    width: 98%;
     @include respond(tablet) {
-      font-size: 1.125rem;
-      line-height: 1.56em;
+      font-size: 1.125rem; // 18px
+      line-height: 1.56em; // 28px
       width: 74%;
     }
     @include respond(desktop) {
-      font-size: 1.25rem;
-      line-height: 1.7em;
-      width: 80%;
+      font-size: 1.25rem; // 20px
+      line-height: 1.7em; // 34px
+      width: 78%;
     }
   }
 }
@@ -197,58 +210,54 @@ body {
     }
     @include respond(desktop) {
       background-position: top -40px left 43%;
-
       background-size: 312px 468px;
     }
   }
   & .app-img {
-    width: 209px;
+    width: clamp(209px, 40%, 312px);
+    // width: 209px;
     position: relative;
     top: -98px;
     @include respond(tablet) {
-      width: 270px;
+      // width: 270px;
       position: absolute;
       top: -138px;
       left: 50px;
     }
     @include respond(desktop) {
-      width: 312px;
+      // width: 312px;
       top: -214px;
       left: 100px;
     }
   }
   & .card {
-    margin-top: -50px;
+    margin-top: -3.125em; //-50px
     color: $color-white;
     background-color: $color-primary;
     border-radius: inherit;
-    padding: 3em 2.25em; // 48px 36px;
+    padding: 3em 2.25em; // 48px 36px
     @include respond(tablet) {
-      // padding: 3em; // 48px;
-      padding: 3em 3em 3em 2.5em;
+      padding: 3em 3em 3em 2.5em; // 48px 48px 48px 40px
       position: absolute;
       top: 150px;
       right: 50px;
-      min-width: 399px;
-      max-width: 50%;
+      width: clamp(399px, 50%, 40%);
+      // min-width: 399px;
+      // max-width: 50%;
       margin-top: 0;
     }
     @include respond(desktop) {
-      // padding: 3.63em 3.38em 3em 3.38em; // 58px 54px 48px 54px;
-      padding: 3.63em 3.5em 3em 3.38em; // 58px 54px 48px 54px;
-
-      max-width: 40%;
+      padding: 3.63em 3.5em 3em 3.38em; // 58px 56px 48px 54px
+      // max-width: 40%;
       top: 90px;
       right: 96px;
     }
     &__title {
       font-weight: bold;
-      font-size: 2rem; // 32px;
-      // margin-bottom: 0.63em; // 10px
-      margin-bottom: 0.4em;
+      font-size: 2rem; // 32px
+      margin-bottom: 0.4em; // 12px
       @include respond(tablet) {
-        margin-bottom: 0.35em;
-        // margin-bottom: 0.75em; // 12px
+        margin-bottom: 0.35em; // 11px
       }
       @include respond(desktop) {
         font-size: 2.5rem; // 40px
@@ -258,49 +267,38 @@ body {
     &__description {
       font-size: 1.125rem; // 18px
       line-height: 1.56em; // 28px
-      // margin-bottom: 2.06em; // 37px;
-      margin-bottom: 1em;
-      @include respond(tablet) {
-        margin-bottom: 1em;
-      }
+      margin-bottom: 1em; // 18px
       @include respond(desktop) {
         font-size: 1.25rem; // 20px
         line-height: 1.7em; // 34px
-        margin-bottom: 1.1em;
-        // margin-bottom: 2.15em; // 43px;
+        margin-bottom: 1.1em; // 22px
       }
     }
     &__pricing {
-      font-size: 20px;
-      // margin-bottom: 1.5em; // 30px;
-      margin-bottom: 0.7em;
+      font-size: 1.25rem; // 20px
+      margin-bottom: 0.7em; // 14px
       padding-left: 5px;
       display: flex;
       align-items: center;
-      @include respond(tablet) {
-        margin-bottom: 0.7em;
-      }
       @include respond(desktop) {
-        margin-bottom: 1.5em;
-        // margin-bottom: 2.3em; // 46px;
+        margin-bottom: 1.5em; // 30px
         padding-left: 0;
       }
       & > span {
-        font-size: 65px;
+        font-size: 4.06rem; // 65px
         font-weight: bold;
-        margin-right: 1rem;
+        margin-right: 1rem; // 16px
       }
     }
     .btn-container {
       display: flex;
       flex-direction: column;
       gap: 0.9em;
-      padding-left: 5px; // moves into place for PerfectPixel
       .btn {
         border-radius: 12px;
         font-weight: bold;
         font-size: 1.125rem; // 18px
-        padding: 1.11em 0; // 20px 0;
+        padding: 1.11em 0; // 20px 0
         display: flex;
         justify-content: center;
         gap: 3px;
@@ -352,30 +350,25 @@ body {
 }
 .footer {
   margin-top: 3.81em; // 61px
-  margin-bottom: 5em; // 80px;
-  padding-left: 5px; // moves into place for PerfectPixel
+  margin-bottom: 5em; // 80px
   @include respond(tablet) {
     display: grid;
     grid-template-columns: 1.3fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    margin-top: 180px;
-    margin-bottom: 5.3em; // 85px;
+    grid-template-rows: auto;
+    margin-top: 11.5em; // 180px
+    margin-bottom: 5.3em; // 85px
   }
   @include respond(desktop) {
     grid-template-columns: 1fr 1.4fr 1.5fr;
     grid-template-rows: 1fr;
-    margin-top: 200px;
-    margin-bottom: 5.6em; // 90px;
+    margin-top: 12.5em; //200px
+    margin-bottom: 5.6em; // 90px
   }
   &__logo {
-    margin-bottom: 1.7em;
-    // margin-bottom: 2em; // 32px;
+    display: block;
+    margin-bottom: 2.1em; // 27px
     grid-column: 1;
     grid-row: 1;
-    @include respond(desktop) {
-      grid-column: 1;
-      grid-row: 1;
-    }
   }
   &__text {
     line-height: 1.63em; // 26px
@@ -384,7 +377,6 @@ body {
     @include respond(desktop) {
       grid-column: 2;
       grid-row: 1;
-      // margin-left: -80px;
     }
   }
   .copyright,
@@ -395,7 +387,7 @@ body {
     color: inherit;
     font-weight: bold;
     &:hover,
-    &focus {
+    &:focus {
       text-decoration: underline;
     }
     @include respond(tablet) {
@@ -406,7 +398,7 @@ body {
     grid-column: 2;
     grid-row: 2;
     justify-self: end;
-    margin-top: 4em; // 64px;
+    margin-top: 4em; // 64px
     display: flex;
     gap: 20px;
     color: $color-black;
@@ -418,14 +410,36 @@ body {
       grid-column: 3;
       grid-row: 1;
     }
-    .link__svg {
+    .socials__links .link__svg {
       color: $color-black;
       transition: 0.2s ease-in;
+      display: block;
       &:hover,
       &:focus {
         color: $color-primary;
         transform: scale(1.2);
       }
+    }
+  }
+}
+.attribution {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  line-height: 1.63em;
+  text-align: center;
+  a {
+    font-weight: bold;
+    color: inherit;
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+  .attribution__author {
+    display: block;
+    @include respond(tablet) {
+      display: initial;
     }
   }
 }
