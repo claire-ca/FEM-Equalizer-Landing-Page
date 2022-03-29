@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/challenges/equalizer-landing-page-7VJ4gp3DE/hub/responsive-landing-page-using-sass-grid-and-flexbox-ByL0Tqgmq](https://www.frontendmentor.io/challenges/equalizer-landing-page-7VJ4gp3DE/hub/responsive-landing-page-using-sass-grid-and-flexbox-ByL0Tqgmq)
 - Live Site URL: [https://fem-equalizer-landing-page.vercel.app/](https://fem-equalizer-landing-page.vercel.app/)
 
 ## My process
