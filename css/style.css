@@ -34,28 +34,28 @@ a {
   text-decoration: none;
 }
 
-/* line 2, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/base/_utilities.scss */
+/* line 1, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/base/_utilities.scss */
 .container {
   width: 88%;
   margin: 0 auto;
 }
 
 @media (min-width: 48em) {
-  /* line 2, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/base/_utilities.scss */
+  /* line 1, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/base/_utilities.scss */
   .container {
     width: 90%;
   }
 }
 
 @media (min-width: 75em) {
-  /* line 2, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/base/_utilities.scss */
+  /* line 1, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/base/_utilities.scss */
   .container {
     width: 77%;
   }
 }
 
 @media (min-width: 100em) {
-  /* line 2, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/base/_utilities.scss */
+  /* line 1, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/base/_utilities.scss */
   .container {
     width: 65%;
     max-width: 1110px;
@@ -69,7 +69,7 @@ Hides icon text, but still can be read by screen readers.
 Code snippet taken from: https://a11y-101.com/development/skip-link
 
 */
-/* line 24, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/base/_utilities.scss */
+/* line 23, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Equalizer-Landing-Page/scss/base/_utilities.scss */
 .visually-hidden {
   clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
